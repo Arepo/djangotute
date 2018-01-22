@@ -9,11 +9,4 @@
 {% else %}
   <p>No polls are available</p>
 {% endif %}
-<br>
-<ul>
-  {% for question in listy %}
-    <li>
-      <a href="{% url 'polls:detail' question.id %}">{{ question }}</a>
-    </li>
-  {% endfor %}
-</ul>
+
